@@ -1,0 +1,200 @@
+html,body{
+    /* height: 50%;
+    width: 100%; */
+    background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=1856&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.App{
+    height: 100vh;
+    padding: 0px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.books{
+    /* background-color: antiquewhite;  */
+    /* flex: 4;
+    display: flex;
+     */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    height: 70%;
+
+    margin-top: 10%;
+    margin-left: 80px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: auto;
+    height: 400px;
+    gap:40px; */
+
+}
+.book{
+    background-color:rgba(199, 163, 149, 0.169);
+    /* flex:1; */
+    /* display:flex; */
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    padding: 20px;
+    height: 500px ;
+    width: 200px ;
+    display: inline;
+
+}
+.book:hover{
+    transform: scale(1.06);
+    z-index: 0;
+}
+.book h2{
+    color: rgb(50, 0, 0);
+    max-height: 2.5em; 
+    overflow: hidden;
+    
+    /* text-shadow: 4px 4px black; */
+    
+}
+.book p{
+    max-height: 2.5em;
+    color: rgb(50, 0, 0);
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.book span{
+    color: rgb(50, 0, 0);
+    margin: 40%;
+    font-weight: bold;
+}
+.delete{
+    border:none;
+    padding: 3px 6px;
+    background-color: burlywood;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    margin: 5%;
+    flex-wrap: wrap;
+    margin: 5%;
+    border-radius: 5px;
+    margin-top: 15%;
+}
+.update{
+    border:none;
+    padding: 3px 6px;
+    background-color: rgba(50, 0, 0, 0.704);
+    cursor: pointer;
+    border:1px solid rgb(204,204,243);
+    color:rgb(139,139,234);
+    flex-wrap: wrap;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.update-button{
+    color: white;
+}
+img{
+    width: 200px;
+    height:250px;
+    /* padding: 10%; */
+    /* margin: -10; */
+    object-fit:cover;
+    /* background-color: rgba(205, 149, 100, 0.991); */
+    
+}
+
+.addBook{
+    margin-top: 20px;
+    margin: 10%;
+    padding: 8px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgba(240, 128, 128, 0.574);
+    box-shadow: 5px 5px;
+}
+
+.last{
+    align-items: center;
+    justify-content: center;
+    position: static;
+    
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    gap : 20px;
+    padding: 5%;
+    border-radius: 15%;
+    background-color:rgba(199, 163, 149, 0.349);
+    
+}
+
+.form h1{
+    color: rgb(50, 0, 0);
+    text-shadow: 2px 2px white;
+}
+input{
+    width:250;
+    padding:10px;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+.formButton{
+    border : none;
+    padding: 10px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+a{
+    color: white;
+}
+
+
+#a1{
+    color: rgb(50, 0, 0);
+    /* position: fixed;  */
+    text-align: center; 
+    background-color: burlywood;
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    box-shadow: 5px 5px;
+    animation: fadeIn 3s;
+    
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
